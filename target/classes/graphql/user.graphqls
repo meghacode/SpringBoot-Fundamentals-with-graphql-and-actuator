@@ -1,0 +1,18 @@
+type User {
+    id:ID!
+    name:String!
+    age:Int!
+
+}
+
+type Query {
+    findAllUser : [User]!
+    countUser : Int!
+}
+
+type Mutation {
+    newUser(name : String!, age : Int!): User!
+    deleteUser(id : ID!) : Boolean
+}
+
+
